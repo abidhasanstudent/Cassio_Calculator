@@ -1,0 +1,46 @@
+<html>
+    <head>
+  <link rel="stylesheet" href="calculator.css">
+        <title> cassio calculator </title>
+    </head>
+<body>
+    <h1>
+        Cassio Calculator
+    </h1>
+    <h2>
+        BY :- ABID HASAN
+    </h2>
+</body>
+    <form name ="form1" class ="calci" action="cassio calculator.html" method="POST">
+<input type="text" name="Answer" id="display"> <br>
+    </br>
+<input type="button" class ="btnDesign" value="C" onclick="form1.Answer.value=''">
+<input type="button" class ="btnDesign" value="<" onclick="form1.Answer.value+=form1.Answer.value.substring(0,form1.Answer.value.length*1-1)">
+<input type="button" class ="btnDesign" value="00" onclick="form1.Answer.value+='00'">
+<input type="button" class ="operatorDesign" value="/" onclick="form1.Answer.value+='/'">
+<br>
+</br>
+
+<input type="button" class ="btnDesign" value="7" onclick="form1.Answer.value+='7'">
+<input type="button" class ="btnDesign" value="8" onclick="form1.Answer.value+='8'">
+<input type="button" class ="btnDesign" value="9" onclick="form1.Answer.value+='9'">
+<input type="button" class ="operatorDesign" value="*" onclick="form1.Answer.value+='*'">  <br>
+</br>
+
+<input type="button" class ="btnDesign" value="4" onclick="form1.Answer.value+='4'">
+<input type="button" class ="btnDesign" value="5" onclick="form1.Answer.value+='5'">
+<input type="button" class ="btnDesign" value="6" onclick="form1.Answer.value+='6'">
+<input type="button" class ="operatorDesign" value="-" onclick="form1.Answer.value+='-'">  <br>
+</br>
+<input type="button" class ="btnDesign" value="1" onclick="form1.Answer.value+='1'">
+<input type="button" class ="btnDesign" value="2" onclick="form1.Answer.value+='2'">
+<input type="button" class ="btnDesign" value="3" onclick="form1.Answer.value+='3'">
+<input type="button" class ="operatorDesign" value="+" onclick="form1.Answer.value+='+'">  <br>
+</br>
+<input type="button" id ="zero" value="0" onclick="form1.Answer.value+='0'">
+<input type="button" class ="btnDesign" value="." onclick="form1.Answer.value+='.'">
+<input type="button" class ="operatorDesign" value="=" onclick="form1.Answer.value= eval(form1.Answer.value)">
+
+
+    </form>
+</html>
